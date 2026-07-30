@@ -11,7 +11,7 @@ stacks:
     React,
     TypeScript,
     Tailwind CSS,
-    Shadcn/ui,
+    shadcn/ui,
     React Hook Form,
     '@react-pdf/renderer',
     Supabase,

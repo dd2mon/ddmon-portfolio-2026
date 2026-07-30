@@ -10,7 +10,7 @@ stacks:
     React,
     TypeScript,
     Tailwind CSS,
-    Shadcn/ui,
+    shadcn/ui,
     TanStack Query,
     React Hook Form,
     '@react-pdf/renderer',
