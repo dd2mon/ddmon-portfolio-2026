@@ -17,7 +17,7 @@ stacks:
     NextAuth,
   ]
 facts:
-  period: 2023.07 – 2025.12 · 퇴사 후 유지보수 포함
+  period: 2023.07 – 2025.05 · 퇴사 후 유지보수
   operation: 사내 운영중
   product: 백오피스 서비스
   contribution: PM · 단독 개발 · 배포 · 유지보수

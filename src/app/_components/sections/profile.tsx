@@ -1,8 +1,5 @@
 import Image from 'next/image';
-import {
-  ArrowUpRightIcon,
-  GithubLogoIcon,
-} from '@phosphor-icons/react/dist/ssr';
+import { ArrowUpRightIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr';
 import { Container } from '@/shared/ui/container';
 import { STACK_LOGOS, StackLogo } from '@/shared/ui/stack-logo';
 import { ProfileSideDecoration } from '../ui/profile-side-decoration';
@@ -57,8 +54,7 @@ export function ProfileSection({ recipient }: { recipient?: string }) {
               )}{' '}
               <br />
               <b className="font-secondary font-semibold">
-                Frontend{' '}
-                <span className="font-normal text-foreground!">Developer</span>
+                Frontend <span className="font-normal text-foreground!">Developer</span>
               </b>{' '}
               <br />
               <b>이동희</b>의 <br />
@@ -83,16 +79,12 @@ export function ProfileSection({ recipient }: { recipient?: string }) {
             </ul>
 
             <p className="max-sm:break-normal max-sm:text-justify">
-              React·Next.js 기반 프론트엔드 개발자입니다. 정리되지 않은 요구사항을{' '}
+              React·Next.js 기반 프론트엔드 개발자입니다. <br />
+              정리되지 않은 요구사항을 구체화하고, 프로젝트 구조 설계부터{' '}
               <br className="max-lg:hidden" />
-              구체화하고, 프로젝트 구조 설계부터 개발·배포까지 직접 책임져
-              왔습니다.
-              <br />
-              <br />
-              고객사 웹 프로젝트 120건 이상을 수행하며 반복 개발 패턴을 공통
-              컴포넌트와 개발 템플릿으로 정리했습니다. 이후 사용자 계층과 업무
-              조건, 권한과 데이터 검증이 복잡한 B2B 서비스와 어드민으로 개발
-              범위를 확장했습니다.
+              개발·배포까지 직접 책임져 왔습니다. 여러 프로젝트에서 활용하고{' '}
+              <br className="max-lg:hidden" />
+              개선할 수 있는 코드와 개발 기반을 만드는 데 관심이 많습니다.
             </p>
           </div>
 
@@ -100,9 +92,7 @@ export function ProfileSection({ recipient }: { recipient?: string }) {
             <div className="space-y-5">
               {TECH_STACK_GROUPS.map(group => (
                 <article key={group.label} className="space-y-2">
-                  <h3 className="text-sm font-secondary font-medium text-ash">
-                    {group.label}
-                  </h3>
+                  <h3 className="text-sm font-secondary font-medium text-ash">{group.label}</h3>
                   <ul className="grid grid-cols-5 gap-1.5 max-sm:grid-cols-4">
                     {group.stacks.map(stack => (
                       <li
@@ -183,9 +173,7 @@ function Section({ title, subtitle, children }: SectionProps) {
         <h2 className="text-2xl font-medium font-secondary text-ash-dark">
           {title}
           {subtitle && (
-            <small className="ml-[0.5em] text-ash font-normal text-[0.6em]">
-              {subtitle}
-            </small>
+            <small className="ml-[0.5em] text-ash font-normal text-[0.6em]">{subtitle}</small>
           )}
         </h2>
       )}
